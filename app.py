@@ -198,7 +198,7 @@ with st.sidebar:
     st.markdown("### ⚡ Inference Latency")
     latency_placeholder = st.empty()
     latency_placeholder.metric(label="", value="0.00 ms")
-    st.progress(0, text="Goal: < 50ms")
+    st.progress(0, text="Goal: < 100ms")
     
     st.markdown("### 🗄️ Sparsity Rate")
     st.metric(label="MovieLens 1M", value=f"{sparsity:.4%}")
